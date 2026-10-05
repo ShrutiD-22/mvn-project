@@ -24,7 +24,7 @@ pipeline{
                     junit '**/target/surefire-repoerts/*.xml'
                 }
                 failure{
-                    echo 'Unit test failed...'
+                    echo 'Unit test failed.....'
                 }
             }        
 
