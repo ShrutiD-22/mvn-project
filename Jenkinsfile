@@ -3,6 +3,7 @@ pipeline{
 
     tools{
         maven 'Maven-3.9.16'
+
     }
 
     stages{
@@ -21,10 +22,10 @@ pipeline{
             }  
             post{
                 success{
-                    junit '**/target/surefire-repoerts/*.xml'
+                   junit '**/target/surefire-reports/*.xml'
                 }
                 failure{
-                    echo 'Unit test failed.....'
+                    echo 'Unit test failed.......'
                 }
             }        
 
